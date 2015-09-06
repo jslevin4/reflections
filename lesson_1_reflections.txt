@@ -1,0 +1,64 @@
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+Viewing a diff made it easier to see the differences between the two versions
+of the files.  The diff highlights the differences, so you know what to pay
+attention to, and aren't distracted by all the other lines in the files which
+are the same.
+
+
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+You can see all the changes that have been made, which might help you learn
+what the changes did, and how to make future changes.  You can undo changes
+that caused problems.  Instead of manually getting a file back to a prior
+state, you can just go back to that prior state.
+
+
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+On the plus side, you have control when to commit, so you can try to save a 
+version of the file at a logical point, such as when you've fixed one bug or
+added a feature.  On the minus side, you might go too long without doing a
+commit, and introduce a problem which is hard to locate in all the changes, 
+and an automatic system might have saved something sooner that could help
+you recover.
+
+
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+
+Some files are logically connected, such as the html and css files for a
+webpage, or the file where a method is defined and the file where it is used.
+It makes sense, especially for coding, to keep track of changes in multiple
+files in a single commit / change.
+
+How can you use the commands git log and git diff to view the history of files?
+
+You can use git log to see a history of commits with details about what changed
+with each commit.  Git diff can be used to compare two commits.  To compare two
+consecutive commits, you can type git diff followed by the ids of the two 
+commits.  Git log lists more recent commits first.  If you run git diff with
+a id of a commit found farther down in the log (earlier) and the commit immediately
+above it (later), you can see the differences between the files, with additions
+marked in green and deletions marked in red, assuming you've set your git config
+to use color.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+You can be more confident to experiment, because you know that if something
+breaks, you can revert to an earlier commit and also compare your broken
+commit to an earlier commit to find out what's wrong.  You don't have to
+worry that you will break something and have no way to get back to the
+working state.
+
+Now that you have your workspace set up, what do you want to try using Git for?
+
+I'd like to try using Git for programming, to see if I can make changes to
+programs, revert to previous versions if I break something, and see a list of
+changes showing how I've made progress.  This may help me break up my work into
+logical steps that are easier to manage.
