@@ -6,3 +6,24 @@ When you initialize a repository, using git init, you create an empty repository
 How is the staging area different from the working directory and the repository? What value do you think it offers?
 
 The staging area is a middle ground between the working directory and the repository.  You choose which files from your working directory you wish to track, and use git add to add them to the staging area.  They remain there until you do a commit, at which time they become part of the repository.  It provides some safety in that you can choose to add and probably delete files in the staging area before you finally decide which files should be part of a commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+
+You can get files ready for your commit by adding them to the staging area.  You might just have a single file in the staging area for a commit, or you might have several, especially if they are connected and changes to several files are required for the change you are making, such as adding a feature.  You can get them all added to the staging area, at different times, and commit when you're ready.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branches help?
+
+A branch might be useful if you want to try an experiment, or change the code in a major way, while keeping the main version of your code unchanged.  The examples of making something in a different language, or trying an alternate version seem like good ones.
+
+How do the diagrams help you visualize the branch structure?
+
+The diagrams show graphically how the structure of commits can be like a tree, with multiple branches.  This is easier to see in a drawing or diagram than in a form like the list of commits in git log.
+
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+
+Merging two branches together results in the resulting branch containing both its own history and the history of the other branch, with the changes merged together.  It's shown this way in the diagram, with the two branches combining at the commit that merges them together.  This commit has more than one parent; its parents are both branches that were merged together.  The git log history now shows the commits in both branches, ordered by timestamp, which means they may be interleaved.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+
+Git's automatic merging is fast and easy.  Manual merge forces you to think about the changes and figure out how to merge them together so both changes or improvements are in place and the code is a functioning whole.
