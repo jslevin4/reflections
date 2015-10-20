@@ -23,3 +23,11 @@ A branch is a name that refers to a commit or commit history.  When a new commit
 branch, the branch moves to "point" to that latest commit, the tip of the branch.  Projects may have a
 master branch.  Branches other than the master branch are histories of commits that diverge from the
 master branch, and allow you to experiment with big changes to a repository (or program).
+
+What is the benefit of having a copy of the last known state of the remote stored locally?
+
+With the last known state of the remote repository stored locally, you can see how your local
+repository has changed compared to this state.  You can also work offline, without checking the
+current state of the remote repository.  At some point, you will have to check with the remote
+repository to see how it has changed from the last known state stored in your repository, and see
+if there are any conflicts with the current state of your repository which must be resolved.
