@@ -31,3 +31,14 @@ repository has changed compared to this state.  You can also work offline, witho
 current state of the remote repository.  At some point, you will have to check with the remote
 repository to see how it has changed from the last known state stored in your repository, and see
 if there are any conflicts with the current state of your repository which must be resolved.
+
+How would you collaborate without using Git or GitHub? What would be easier, and what would be harder?
+
+Without using Git or GitHub, I might use another source control system like Subversion, and email
+or meet with my collaborators to discuss changes.  We might pass files around.  It might be 
+technically easier to avoid using Git commands, but it wouldn't be as systematic, and the
+history of changes wouldn't be as complete.  The online interface of collaborating with GitHub 
+would be missing.
+Using Git and Github, the workflow seems to be: create a branch, make changes, and commit them.
+Push your new, modified branch to the "fork", or the GitHub repository.  Submit a pull request, to
+request someone review your changes and approve merging it into the master branch.
