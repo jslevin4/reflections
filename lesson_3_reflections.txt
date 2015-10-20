@@ -42,3 +42,12 @@ would be missing.
 Using Git and Github, the workflow seems to be: create a branch, make changes, and commit them.
 Push your new, modified branch to the "fork", or the GitHub repository.  Submit a pull request, to
 request someone review your changes and approve merging it into the master branch.
+
+When would you want to make changes in a separate branch rather than directly in master? 
+What benefits does each approach have?
+
+Making changes in a separate branch is good when collaborating with others using GitHub and 
+using Pull requests to have changes reviewed before merging them into the master branch.  Using
+a branch is also good for big changes that might break something, where you want to keep your
+master branch around as a stable branch, while you experiment or make big changes on a
+different branch.
